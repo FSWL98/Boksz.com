@@ -3,13 +3,23 @@ html {
 }
 body {
     background-color: white;
-    width: 932px;
+    max-width: 932px;
     margin: 56px auto;
     border-radius: 17px;
     padding: 0 12px;
 }
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.cover {
+    width: 80px;
+    height: 120px;
+}
 .page-header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     padding: 32px 60px;
@@ -25,9 +35,11 @@ body {
     font-size: 9px;
     flex-basis: 239px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     font-weight: normal;
     font-family: "Arial Black", sans-serif;
+    cursor: pointer;
 }
 .nav-menu__item:hover {
     color: #c1b0fa;
@@ -43,6 +55,7 @@ body {
     text-transform: uppercase;
     border-radius: 24px;
     box-shadow: 0 0 4px 0 #c1b0fa;
+    cursor: pointer;
 }
 .page-header .search {
     border: 1px solid lightgrey;
@@ -52,6 +65,7 @@ body {
     color: lightgrey;
     padding-bottom: 7px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 .search__icon {
@@ -63,4 +77,61 @@ body {
     font-size: 12px;
     margin-top: 5px;
     margin-left: 10px;
+}
+.author {
+    margin: 0 65px;
+}
+.author .author__name {
+    font-size: 24px;
+    font-family: "Arial Black", sans-serif;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.book-info {
+    flex-basis: 245px;
+    height: 236px;
+    background-color: #c1b0fa;
+    border-radius: 20px;
+    box-shadow: 0 0 4px 0 #c1b0fa;
+}
+.book-info .cover {
+    float: left;
+    margin-left: 24px;
+    margin-top: 21px;
+    margin-right: 19px;
+}
+.book-info .star_active {
+    color: white;
+    font-size: 17px;
+}
+.book-info .star_inactive {
+    color: #b7a3f9;
+    font-size: 17px;
+}
+.book-info .avatar {
+    width: 25px;
+    height: 25px;
+}
+.book-info__name {
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    height: 30px;
+}
+.tag {
+    font-size: 7px;
+    background-color: #d9c1fb;
+    color: #b7a3f9;
+    padding: 3px 7px;
+    border-radius: 2px;
+}
+.book-info__text {
+    color: white;
+    margin-left: 24px;
+    margin-right: 19px;
+    font-size: 9px;
 }
