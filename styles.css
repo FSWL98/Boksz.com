@@ -7,6 +7,7 @@ body {
     margin: 56px auto;
     border-radius: 17px;
     padding: 0 12px;
+    box-shadow: -1px -1px 6px 0 #a078b3;
 }
 .avatar {
     width: 40px;
@@ -134,4 +135,64 @@ body {
     margin-left: 24px;
     margin-right: 19px;
     font-size: 9px;
+}
+.flex-container.second {
+    margin: 25px 100px 60px 80px;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+.flex-container.books {
+    margin-right: 40px;
+}
+.books .cover {
+    float: left;
+    margin-right: 22px;
+    box-shadow: 0 0 4px 0 gray;
+}
+.books__item {
+    width: 230px;
+    margin-bottom: 30px;
+}
+.books__name {
+    font-weight: bold;
+    margin-top: 16px;
+}
+.books__author {
+    font-weight: normal;
+    color: #929292;
+    font-size: 14px;
+}
+.books__item .star_active {
+    color: #b4a0f9;
+    font-size: 12px;
+}
+.books__item .star_inactive {
+    color: #e4e0f5;
+    font-size: 12px;
+}
+.authors-list {
+    flex-basis: 200px;
+    margin-right: 50px;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 480px;
+}
+.authors-list__item {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.authors-list__name {
+    margin-left: 15px;
+    cursor: pointer;
+}
+.authors-list .avatar {
+    box-shadow: 0 0 4px 0 #c1b0fa;
+}
+.flex-container.second h4 {
+    font-weight: bold;
+    font-size: 28px;
 }
